@@ -1,0 +1,64 @@
+.flex-body
+    @media screen and (max-width: 1200px)
+        @apply flex-none
+    .screen
+        @apply flex justify-start
+        @apply bg-dark_gray fixed top-0 left-0 z-50 h-full
+        @media screen and (max-width: 1200px)
+            @apply hidden w-full mt-[60px]
+        .menu
+            @apply flex flex-col gap-1
+            @apply text-white list-none
+            @apply px-8 py-10 w-72 gap-2
+            @media screen and (max-width: 1200px)
+                @apply p-0 w-full gap-4 items-center
+            .titulos_list_item
+                @apply text-primary pt-4
+            .menu_item
+                @apply w-auto
+                @apply list-none
+                @apply transition duration-200 ease-in
+                @apply pb-10 pl-4
+                @apply font-normal 
+            .menu_item_selected 
+                @apply list-none
+                @apply transition duration-200 ease-in
+                @apply font-semibold text-white underline underline-offset-4
+
+        
+.mobile
+    @apply flex justify-between items-center bg-dark_gray fixed w-full z-50 hidden
+    @media screen and (max-width: 1200px)
+        @apply block
+    .menu2
+        @apply flex items-center justify-between w-full list-none
+        @apply px-20 h-16
+        .menu-mobile-item
+            @apply p-0 flex items-center
+            a
+                @apply pl-0
+        .menu-toggle
+            .hamburger
+                button
+                    img
+                        @apply w-10
+
+
+
+/* Estilos para ocultar la barra lateral por defecto */
+.screen
+    @apply hidden
+
+
+/* Estilos para mostrar la barra lateral al agregar la clase 'open' */
+.screen.open
+    @apply block
+
+
+.logo_yelmo
+    @apply pb-[2rem]
+    @media screen and (max-width: 1200px)
+        @apply hidden
+
+.logo_yelmo_mobile
+    @apply pb-0 w-24

@@ -1,0 +1,26 @@
+.destacado
+    @apply flex justify-center
+
+.tw-section
+    @apply pt-0 pl-28 pr-28 pb-24
+    @apply flex flex-col gap-10
+    @media screen and (max-width: 900px)
+        @apply px-10
+    .intro-tw
+        @apply flex flex-col gap-0
+    .aplication-tw
+        @apply flex flex-col gap-6
+        .img-profiles-tw
+            @apply flex gap-5
+            @media screen and (max-width: 900px)
+                @apply flex-col
+            .img-profiles-tw1
+                @apply w-[70%]
+                @media screen and (max-width: 900px)
+                    @apply w-full
+            .img-profiles-tw2
+                @apply w-[23%]
+                @media screen and (max-width: 900px)
+                    @apply w-[50%]
+                @media screen and (max-width: 600px)
+                    @apply w-full
